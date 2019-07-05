@@ -11,6 +11,7 @@
 | Spec.                                                   | Input                       | Output                             |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.|
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | getting API key from BetterDoctor API and saving it .env files                                                             |
 | basic html writing for input and output style.                                                                             |
 | basic user interface logic writing in main.js                                                                              |
@@ -25,17 +26,17 @@
 | something works but still not enough ....                                                                                  |
 | it gives result for fixed input rather than user input.                                                                    |
 | it give first name of doctor finally in the Portland area                                                                  |
-|
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| If the query response includes any doctors, the following information should be included about each doctor: first name,    |
+| last name, address, phone number, website and whether or not the doctor is accepting new patients                          |
+| (the API provides this data).                                                                                              |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| console.log test for first, last name, address, phone number, and new patients ....                                        |
+| 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
-| 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
-| If the query response includes any doctors, the following information should be included about each doctor: first name,    |
-| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
-| last name, address, phone number, website and whether or not the doctor is accepting new patients                          |
-| (the API provides this data).                                                                                              |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | If the API call results in an error (any message not a 200 OK), the application should return a notification that states   |
 | what the error is.                                                                                                         |
