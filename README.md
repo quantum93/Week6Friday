@@ -14,7 +14,13 @@
 | getting API key from BetterDoctor API and saving it .env files                                                             |
 | basic html writing for input and output style.                                                                             |
 | basic user interface logic writing in main.js                                                                              |
-| basic bundling test wit webpack                                                                                            | 
+| basic bundling test wit webpack                                                                                            |
+| first test with very basic information from API                                                                            |
+| get error message "Cannot POST /index.html"                                                                                |
+| test with detail query for API                                                                                             |
+| console.log(`${response}`) --> [object Object]
+|
+
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
