@@ -33,7 +33,7 @@
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | console.log test for first, last name, address, phone number, and new patients ....                                        |
 | using forEach, printout of doctors' name.                                                                                  |
-| it gives all doctors information by query                                                                                  |
+| it gives all doctors information by query but has a bug for missing data                                                   |
 |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
