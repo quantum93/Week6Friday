@@ -9,14 +9,18 @@ $(document).ready(function() {
     event.preventDefault();
     const inputQuery = $('#symptom').val();
     let service = new DoctorLookup;
-    let promise = service.DoctorList(inputQuery);
+    let promise = service.DoctorList();
 
+// ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     promise.then(function (response) {
       let apiData = JSON.parse(response);
-      console.log(apiData);
+      console.log(apiData.data[0]);
+      console.log(apiData.data[0].profile);
+      console.log(apiData.data[0].profile.first_name); // <---- this gives first name of doctor!
     }, function (error) {
       $('#doctors').text('Sorry, we cannot find Doctor for you...');
     });
+// ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   });
 });
 

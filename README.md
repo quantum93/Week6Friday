@@ -21,13 +21,16 @@
 | console.log(`${response}`) --> [object Object]                                                                             |
 | API Doctor search with portland lat & log info.                                                                            |
 | API Doctor search with portland lat & log info.  ----> get undefined                                                       |
-| split user interface and business logic first ----> still doesn't work
-| something works but still not enough ....
-
+| split user interface and business logic first ----> still doesn't work                                                     |
+| something works but still not enough ....                                                                                  |
+| it gives result for fixed input rather than user input.                                                                    |
+| it give first name of doctor finally in the Portland area                                                                  |
+|
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
+| 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | If the query response includes any doctors, the following information should be included about each doctor: first name,    |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
