@@ -18,8 +18,10 @@
 | first test with very basic information from API                                                                            |
 | get error message "Cannot POST /index.html"                                                                                |
 | test with detail query for API                                                                                             |
-| console.log(`${response}`) --> [object Object]
-|
+| console.log(`${response}`) --> [object Object]                                                                             |
+| API Doctor search with portland lat & log info.                                                                            |
+| API Doctor search with portland lat & log info.  ----> get undefined                                                       |
+
 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
