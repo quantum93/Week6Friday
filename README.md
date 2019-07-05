@@ -13,7 +13,8 @@
 | A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.|
 | getting API key from BetterDoctor API and saving it .env files                                                             |
 | basic html writing for input and output style.                                                                             |
-| basic user interface logic writing in main.js                                                                              | 
+| basic user interface logic writing in main.js                                                                              |
+| basic bundling test wit webpack                                                                                            | 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
