@@ -1,6 +1,6 @@
-# Week5Friday Independent Project
+# Week6Friday Independent Project
 
-#### Super Galactic Age Calculator. 7/5/2019
+#### Doctor Lookup. 7/5/2019
 
 #### By **Tae Lee**
 
@@ -10,9 +10,25 @@
 ### Specs
 | Spec.                                                   | Input                       | Output                             |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
-
-
-
+| A user should be able to enter a medical issue to receive a list of doctors in the Portland area that fit the search query.|
+| getting API key from BetterDoctor API and saving it .env files                                                             | 
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| If the query response includes any doctors, the following information should be included about each doctor: first name,    |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| last name, address, phone number, website and whether or not the doctor is accepting new patients                          |
+| (the API provides this data).                                                                                              |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| If the API call results in an error (any message not a 200 OK), the application should return a notification that states   |
+| what the error is.                                                                                                         |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
+| If the query response doesn't include any doctors (for instance, if no doctors meet the search criteria), the application  |
+| should return a notification that states that no doctors meet the criteria. (This is not an error so it should be handled  |
+| separately from any errors.)                                                                                               |
+| :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 
 ## Setup/Installation Requirements
 
@@ -20,7 +36,6 @@
 2. run command at terminal (npm install)
 3. run command at terminal (npm run start)
 4. recommend Google Chrome for web browser.
-5. some version of OSX may raise errors with a missing libpng dependency (brew install libpng)
 
 ## Known Bugs
 * No known bugs at this time.
@@ -32,10 +47,11 @@
   * jQuery-3.4.1 (https://jquery.com/download/)
   * bootstrap .4.3.1
   * babel
+  * jest
   * eslint
   * webpack 4.19.1
   * html, uglifyjs, clean-webpack plugins
-  * API key 
+  * API key
 
 ## Support and contact details
 
