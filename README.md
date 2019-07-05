@@ -32,7 +32,9 @@
 | (the API provides this data).                                                                                              |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | console.log test for first, last name, address, phone number, and new patients ....                                        |
-| 
+| using forEach, printout of doctors' name.                                                                                  |
+| it gives all doctors information by query                                                                                  |
+|
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
