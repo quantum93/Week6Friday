@@ -7,21 +7,25 @@ const DoctorLookup = require('./doctorlookup.js');
 $(document).ready(function() {
   $('#myInfo').submit(function(event) {
     event.preventDefault();
-    const query = $('#symptom').val();
-    let service = new DoctorList;
-    // const city = $('#location').val();
-    // $('#location').val("");
+    const inputQuery = $('#symptom').val();
+    let service = new DoctorLookup;
+    let promise = service.DoctorList(inputQuery);
 
-    const getElements = function(response) {
-      console.log(`${response}`)
-      console.log(`${response[0]}`)
-
-      // console.log(`${response.data}`)
-      // console.log(`${response.data[0]}`)
-      // console.log(`${response.data[0][0]}`)
-      // console.log(`${response.data[1]}`)
-
-      $('#result').text(`${response.data[0].profile}`);
-    }
+    promise.then(function (response) {
+      let apiData = JSON.parse(response);
+      console.log(apiData);
+    }, function (error) {
+      $('#doctors').text('Sorry, we cannot find Doctor for you...');
+    });
   });
 });
+
+
+
+
+// const getElements = function(response) {
+  //   console.log(`${response}`)
+  //   console.log(`${response[0]}`)
+  //   $('#result').text(`${response.data[0].profile}`);
+  // }
+  // });

@@ -22,7 +22,7 @@
 | API Doctor search with portland lat & log info.                                                                            |
 | API Doctor search with portland lat & log info.  ----> get undefined                                                       |
 | split user interface and business logic first ----> still doesn't work
-
+| something works but still not enough ....
 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
