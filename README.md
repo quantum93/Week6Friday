@@ -38,11 +38,12 @@
 | html writing polish for doctor list information.                                                                           |
 | finally hiding API key! (use `` rather than '')                                                                            |
 | now it works for your input symptom rather than fixed query                                                                |
-| more polish for doctor list information.
+| more polish for doctor list information.                                                                                   |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
-|
+| enter first, last name and symptom                      | David Huberty               | David Huberty, Erika Huberty, David|
+| try to bug fix for multiple query               
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | If the API call results in an error (any message not a 200 OK), the application should return a notification that states   |
 | what the error is.                                                                                                         |

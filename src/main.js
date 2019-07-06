@@ -7,10 +7,14 @@ const DoctorLookup = require('./doctorlookup.js');
 $(document).ready(function() {
   $('#myInfo').submit(function(event) {
     event.preventDefault();
+    let inputFirstName = $('#firstname').val();
+    $('#firstname').val("")
+    let inputlLastName = $('#lastname').val();
+    $('#lastname').val("")
     let inputQuery = $('#symptom').val();
     $('#symptom').val("")
     let service = new DoctorLookup;
-    let promise = service.DoctorList(inputQuery);
+    let promise = service.DoctorList(inputFirstName, inputlLastName, inputQuery);
 
 // ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     promise.then(function (response) {
@@ -23,7 +27,6 @@ $(document).ready(function() {
         // if not, we try to catch the data from API
         let firstName = name.profile.first_name;
         let lastName = name.profile.last_name;
-
         // let street2 = name.practices[0].visit_address.street2;
         let street = name.practices[0].visit_address.street;
         let city = name.practices[0].visit_address.city;
@@ -35,8 +38,6 @@ $(document).ready(function() {
         let website = name.profile.image_url;
         $('#doctors').append(firstName + " " + lastName + ": " + street + ", " + city + ", " + state + ", " + zip + " Tel.: " + phone + "</br>");
       });
-
-
     }, function (error) {
       $('#doctors').text('Sorry, there is an error to process...');  // <---- this is for error of process by promise function.
     });
