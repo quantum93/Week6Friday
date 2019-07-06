@@ -8,6 +8,8 @@ $(document).ready(function() {
   $('#myInfo').submit(function(event) {
     event.preventDefault();
     let inputFirstName = $('#firstname').val();
+    console.log(typeof inputFirstName)
+    console.log(inputFirstName)
     $('#firstname').val("")
     let inputlLastName = $('#lastname').val();
     $('#lastname').val("")

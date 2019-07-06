@@ -43,7 +43,11 @@
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | enter first, last name and symptom                      | David Huberty               | David Huberty, Erika Huberty, David|
-| try to bug fix for multiple query               
+| try to bug fix for multiple query                                                                                          |
+| try to catch the type of data if none of user input is actually applied                                                    |
+| without any input, it gives 10 doctors because the API query with location                                                 |
+| making basic query with location query "or" for Oregon state
+|
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | If the API call results in an error (any message not a 200 OK), the application should return a notification that states   |
 | what the error is.                                                                                                         |
