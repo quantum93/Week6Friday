@@ -47,11 +47,12 @@
 | If the API call results in an error (any message not a 200 OK), the application should return a notification that states   |
 | what the error is.                                                                                                         |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
-|
+| test with intentionally wrong request URL with apiKey   | wrong request URL           | Sorry, there is an error ~         |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | If the query response doesn't include any doctors (for instance, if no doctors meet the search criteria), the application  |
 | should return a notification that states that no doctors meet the criteria. (This is not an error so it should be handled  |
 | separately from any errors.)                                                                                               |
+| For the case of query that doesn't make any result, (which means length of response is zero) make message for it.          |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 
 ## Setup/Installation Requirements

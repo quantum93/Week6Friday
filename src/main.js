@@ -16,7 +16,11 @@ $(document).ready(function() {
     promise.then(function (response) {
       let apiDoctors = JSON.parse(response);
       apiDoctors.data.forEach(function (name) {
-
+        // doesn't match anything means the length of data is zero.
+        if (name.length === 0) {
+          $('#doctors').append('Sorry, no doctors for this search and please try again');
+        }
+        // if not, we try to catch the data from API
         let firstName = name.profile.first_name;
         let lastName = name.profile.last_name;
 
@@ -29,12 +33,12 @@ $(document).ready(function() {
         let phone = name.practices[0].phones[0].number;
         let accept = name.practices[0].accepts_new_patients;
         let website = name.profile.image_url;
-        $('#doctors').append(firstName + " " + lastName + ", " + street + ", " + city + ", " + state + ", " + zip + accept + "</br>");
+        $('#doctors').append(firstName + " " + lastName + ": " + street + ", " + city + ", " + state + ", " + zip + " Tel.: " + phone + "</br>");
       });
 
 
     }, function (error) {
-      $('#doctors').text('Sorry, we cannot find Doctor for you...');
+      $('#doctors').text('Sorry, there is an error to process...');  // <---- this is for error of process by promise function.
     });
 // ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   });
