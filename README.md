@@ -37,7 +37,8 @@
 | we delete street2 option since it is not always available.                                                                 |
 | html writing polish for doctor list information.                                                                           |
 | finally hiding API key! (use `` rather than '')                                                                            |
-|
+| now it works for your input symptom rather than fixed query                                                                |
+| 
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |

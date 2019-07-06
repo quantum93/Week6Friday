@@ -10,7 +10,7 @@ $(document).ready(function() {
     let inputQuery = $('#symptom').val();
     $('#symptom').val("")
     let service = new DoctorLookup;
-    let promise = service.DoctorList();
+    let promise = service.DoctorList(inputQuery);
 
 // ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     promise.then(function (response) {
