@@ -15,24 +15,22 @@ $(document).ready(function() {
 // ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     promise.then(function (response) {
       let apiDoctors = JSON.parse(response);
-      let doctorLists =[];
       apiDoctors.data.forEach(function (name) {
+
         let firstName = name.profile.first_name;
         let lastName = name.profile.last_name;
-        let website = name.profile.image_url;
-        let street2 = name.practices[0].visit_address.street2;
+
+        // let street2 = name.practices[0].visit_address.street2;
         let street = name.practices[0].visit_address.street;
-        if (name.practices[0].visit_address.street2) {
-          let new_street = street2 + street;
-        }
         let city = name.practices[0].visit_address.city;
         let state = name.practices[0].visit_address.state;
         let zip = name.practices[0].visit_address.zip;
+
         let phone = name.practices[0].phones[0].number;
         let accept = name.practices[0].accepts_new_patients;
-        doctorLists.push(firstName, lastName);
+        let website = name.profile.image_url;
+        $('#doctors').append(firstName + " " + lastName + ", " + street + ", " + city + ", " + state + ", " + zip + accept + "</br>");
       });
-      $('#doctors').text(doctorLists);
 
 
     }, function (error) {
