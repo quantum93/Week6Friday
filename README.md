@@ -36,6 +36,8 @@
 | it gives all doctors information by query but has a bug for missing data                                                   |
 | we delete street2 option since it is not always available.                                                                 |
 | html writing polish for doctor list information.                                                                           |
+| finally hiding API key! (use `` rather than '')                                                                            |
+|
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 | A user should be able to to enter a name to receive a list of doctors in the Portland area that fit the search query.      |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
