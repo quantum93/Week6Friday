@@ -58,6 +58,7 @@
 | should return a notification that states that no doctors meet the criteria. (This is not an error so it should be handled  |
 | separately from any errors.)                                                                                               |
 | For the case of query that doesn't make any result, (which means length of response is zero) make message for it.          |
+| number of doctors in apiKey is existed in apiData.meta.total rather than apiData.data                                      |
 | :------------------------------------------------------ | :-------------------------- | :--------------------------------- |
 
 ## Setup/Installation Requirements
