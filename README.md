@@ -82,7 +82,7 @@
   * eslint
   * webpack 4.19.1
   * html, uglifyjs, clean-webpack plugins
-  * API key
+  * API key (.env file is needed in your local directory to access API service)
 
 ## Support and contact details
 
