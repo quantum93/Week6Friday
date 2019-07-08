@@ -25,8 +25,22 @@ $(document).ready(function() {
       }
       apiDoctors.data.forEach(function (doctorData) {
         let doctorName = doctorData.profile.first_name + " " + doctorData.profile.last_name;
-        $('#doctors').append(doctorName + "</br>");
-        // $('#doctors').append(doctorName + ": " + doctorAddress + " Tel.: " + phone + " " + reservation + " " + website + "</br>");
+        let doctorAddress = "";
+        if (doctorData.practices[0].visit_address.street2 !== undefined) {
+            doctorAddress = doctorData.practices[0].visit_address.street2 + " " + doctorData.practices[0].visit_address.street + " " + doctorData.practices[0].visit_address.city + " " + doctorData.practices[0].visit_address.state + " " + doctorData.practices[0].visit_address.zip
+          } else {
+              doctorAddress = doctorData.practices[0].visit_address.street + " " + doctorData.practices[0].visit_address.city + " " + doctorData.practices[0].visit_address.state + " " + doctorData.practices[0].visit_address.zip
+            }
+            let phone = doctorData.practices[0].phones[0].number;
+            let website = doctorData.profile.image_url;
+            let reservation = "";
+            if (doctorData.practices[0].accepts_new_patients === true) {
+                reservation = ':available doctor for appointment';
+              } else {
+                  reservation = ":not available doctor for appointment"
+                }
+        // $('#doctors').append(doctorName + "</br>");
+        $('#doctors').append(doctorName + ": " + doctorAddress + " Tel.: " + phone + " " + reservation + " " + website + "</br>");
       });
     }, function (error) {
       $('#doctors').text('Sorry, there is an error to process...');  // <---- this is for error of process by promise function.
@@ -34,18 +48,3 @@ $(document).ready(function() {
 // ~~~~~~~~ for promise logic ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   });
 });
-
-// let doctorAddress = "";
-// if (name.practices[0].visit_address.street2 !== undefined) {
-//   doctorAddress = name.practices[0].visit_address.street2 + " " + name.practices[0].visit_address.street + " " + name.practices[0].visit_address.city + " " + name.practices[0].visit_address.state + " " + name.practices[0].visit_address.zip
-// } else {
-//   doctorAddress = name.practices[0].visit_address.street + " " + name.practices[0].visit_address.city + " " + name.practices[0].visit_address.state + " " + name.practices[0].visit_address.zip
-// }
-// let phone = name.practices[0].phones[0].number;
-// let website = name.profile.image_url;
-// let reservation = "";
-// if (name.practices[0].accepts_new_patients === true) {
-//   reservation = ':available doctor for appointment';
-// } else {
-//   reservation = ":not available doctor for appointment"
-// }
